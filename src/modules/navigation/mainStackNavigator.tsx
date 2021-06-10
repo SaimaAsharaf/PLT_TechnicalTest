@@ -6,6 +6,8 @@ import {HomeScreen} from '../homeScreen/home';
 import {homeScreenConstants, mainScreenConstants} from '../../assets/constants';
 import {BackImage} from './navigationComponent/backButton/backButton';
 
+// All the Stacks are arranged inside NavigationContainer
+
 const Stack = createStackNavigator();
 
 const MainStackNavigator = () => {

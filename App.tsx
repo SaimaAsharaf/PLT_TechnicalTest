@@ -1,5 +1,6 @@
 /**
- * Sample React Native App
+ * Created on 10/06/2021
+ * Created by Saima Kollatheril Asharaf
  * https://github.com/facebook/react-native
  *
  * @format

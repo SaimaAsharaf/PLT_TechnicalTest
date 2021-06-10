@@ -15,6 +15,8 @@ export const MainScreen = props => {
     TrackingStatus | '(loading)'
   >('(loading)');
 
+  // getTrackingStatus and setTrackingStatus are native bridge  functions that communicate back and forth with JS engine
+
   useEffect(() => {
     try {
       getTrackingStatus()
@@ -26,6 +28,10 @@ export const MainScreen = props => {
       console.log(error, trackingStatus);
     }
   });
+
+  // When a user clicks on the proceed button for the first time after the app is installed, a prompt
+  // asking for tracking would be asked. The user could either accept or reject the permission.
+  // The next time the user clicks on the button no prompt is show
 
   const onPressProceed = React.useCallback(async () => {
     try {
